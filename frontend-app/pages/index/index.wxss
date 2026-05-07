@@ -1,0 +1,13 @@
+.header-title { font-size: 36rpx; font-weight: bold; margin-bottom: 24rpx; color: #333; }
+.station-item { background: #fff; padding: 30rpx; border-radius: 16rpx; margin-bottom: 24rpx; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4rpx 16rpx rgba(0,0,0,0.04); }
+.info { flex: 1; margin-right: 20rpx; }
+.name { font-size: 32rpx; font-weight: 600; color: #333; margin-bottom: 12rpx; }
+.address { font-size: 24rpx; color: #999; margin-bottom: 16rpx; }
+.tags { display: flex; gap: 16rpx; }
+.tag { font-size: 22rpx; padding: 4rpx 12rpx; border-radius: 8rpx; }
+.tag.price { background: #fff2e8; color: #fa541c; }
+.tag.distance { background: #e6f7ff; color: #1890ff; }
+.score-box { text-align: center; border-left: 1px dashed #eee; padding-left: 24rpx; min-width: 110rpx; }
+.score-val { font-size: 44rpx; color: #ff4d4f; font-weight: bold; font-family: 'Courier New', Courier, monospace; }
+.score-label { font-size: 20rpx; color: #999; margin-top: 4rpx; }
+.empty { text-align: center; color: #ccc; margin-top: 100rpx; font-size: 28rpx; }

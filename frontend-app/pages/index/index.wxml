@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="header-title">🔥 附近智能推荐</view>
+  <view class="station-list">
+    <view class="station-item" wx:for="{{stations}}" wx:key="id" bindtap="goToDetail" data-id="{{item.id}}">
+      <view class="info">
+        <view class="name">{{item.name}}</view>
+        <view class="address">{{item.address}}</view>
+        <view class="tags">
+          <text class="tag price">￥{{item.currentPrice != null ? item.currentPrice : '1.20'}}/度</text>
+          <text class="tag distance">距您 {{(item.distance != null ? item.distance : '--')}} km</text>
+        </view>
+      </view>
+      <view class="score-box">
+        <view class="score-val">{{item.recommendScore != null ? item.recommendScore : 0}}</view>
+        <view class="score-label">推荐指数</view>
+      </view>
+    </view>
+    <view wx:if="{{stations.length === 0}}" class="empty">暂无推荐电站</view>
+  </view>
+</view>
