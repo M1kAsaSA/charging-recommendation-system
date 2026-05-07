@@ -45,6 +45,19 @@ export const constantRoutes = [
         meta: { title: '设备档案', icon: 'List' }
       }
     ]
+  },
+  {
+    path: '/order',
+    component: Layout,
+    meta: { title: '订单监控', icon: 'ShoppingCart' },
+    children: [
+      {
+        path: 'list',
+        name: 'OrderList',
+        component: () => import('@/views/order/list.vue'),
+        meta: { title: '订单列表', icon: 'DocumentCopy' }
+      }
+    ]
   }
 ]
 

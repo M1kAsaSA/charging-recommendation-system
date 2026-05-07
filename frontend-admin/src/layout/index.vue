@@ -33,11 +33,14 @@
           </template>
           <el-menu-item index="/pile/list">设备档案</el-menu-item>
         </el-sub-menu>
-        
-        <el-menu-item index="/order">
-          <el-icon><List /></el-icon>
-          <template #title>订单监控</template>
-        </el-menu-item>
+
+        <el-sub-menu index="/order">
+          <template #title>
+            <el-icon><ShoppingCart /></el-icon>
+            <span>订单监控</span>
+          </template>
+          <el-menu-item index="/order/list">订单列表</el-menu-item>
+        </el-sub-menu>
       </el-menu>
     </el-aside>
     
