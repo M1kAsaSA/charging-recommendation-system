@@ -1,0 +1,81 @@
+# Section margins (cm)
+Section 1:
+  top=2.54
+  bottom=2.54
+  left=2.50
+  right=2.50
+  header_distance=2.30
+  footer_distance=1.80
+Section 2:
+  top=2.54
+  bottom=2.54
+  left=2.50
+  right=2.50
+  header_distance=2.30
+  footer_distance=1.80
+Section 3:
+  top=2.54
+  bottom=2.54
+  left=2.50
+  right=2.50
+  header_distance=2.30
+  footer_distance=1.80
+Section 4:
+  top=2.54
+  bottom=2.54
+  left=2.50
+  right=2.50
+  header_distance=2.30
+  footer_distance=1.80
+Section 5:
+  top=2.54
+  bottom=2.54
+  left=2.50
+  right=2.50
+  header_distance=2.30
+  footer_distance=1.80
+Section 6:
+  top=2.54
+  bottom=2.54
+  left=2.50
+  right=2.50
+  header_distance=2.30
+  footer_distance=1.80
+Section 7:
+  top=2.54
+  bottom=2.54
+  left=2.50
+  right=2.50
+  header_distance=2.30
+  footer_distance=1.80
+
+# Styles (font name/size/spacing if set)
+Normal: font=Times New Roman, size=12.0, bold=None, italic=None, line_spacing=None, before=None, after=None
+Heading 1: font=None, size=None, bold=None, italic=None, line_spacing=None, before=None, after=2.5
+Heading 2: font=None, size=16.0, bold=None, italic=None, line_spacing=None, before=None, after=None
+Heading 3: font=None, size=10.5, bold=None, italic=None, line_spacing=1.7333333333333334, before=13.0, after=13.0
+Heading 4: font=None, size=14.0, bold=True, italic=None, line_spacing=1.5666666666666667, before=14.0, after=14.5
+Document Map: font=宋体, size=9.0, bold=None, italic=None, line_spacing=None, before=None, after=None
+annotation text: font=None, size=None, bold=None, italic=None, line_spacing=None, before=None, after=None
+Body Text Indent: font=None, size=None, bold=None, italic=None, line_spacing=None, before=None, after=6.0
+toc 3: font=None, size=None, bold=None, italic=None, line_spacing=None, before=None, after=None
+Body Text Indent 2: font=宋体, size=14.0, bold=None, italic=None, line_spacing=None, before=None, after=None
+Balloon Text: font=None, size=9.0, bold=None, italic=None, line_spacing=None, before=None, after=None
+Footer: font=None, size=9.0, bold=None, italic=None, line_spacing=None, before=None, after=None
+Header: font=None, size=9.0, bold=None, italic=None, line_spacing=None, before=None, after=None
+toc 1: font=None, size=None, bold=None, italic=None, line_spacing=None, before=None, after=None
+toc 2: font=None, size=None, bold=None, italic=None, line_spacing=None, before=None, after=None
+Normal (Web): font=None, size=None, bold=None, italic=None, line_spacing=None, before=None, after=None
+annotation subject: font=None, size=None, bold=True, italic=None, line_spacing=None, before=None, after=None
+第一级标题: font=None, size=16.0, bold=None, italic=None, line_spacing=None, before=None, after=None
+第二级标题: font=None, size=14.0, bold=None, italic=None, line_spacing=None, before=11.25, after=11.25
+参考文献: font=黑体, size=16.0, bold=True, italic=None, line_spacing=None, before=None, after=None
+致谢: font=黑体, size=16.0, bold=True, italic=None, line_spacing=None, before=None, after=None
+List Paragraph: font=None, size=None, bold=None, italic=None, line_spacing=None, before=None, after=None
+TOC Heading: font=None, size=16.0, bold=True, italic=None, line_spacing=1.0791666666666666, before=12.0, after=None
+Default: font=宋体, size=12.0, bold=None, italic=None, line_spacing=None, before=None, after=None
+Revision: font=Times New Roman, size=12.0, bold=None, italic=None, line_spacing=None, before=None, after=None
+21bc9c4b-6a32-43e5-beaa-fd2d792c5735: font=微软雅黑, size=16.0, bold=True, italic=None, line_spacing=1.2, before=None, after=None
+acbfdd8b-e11b-4d36-88ff-6049b138f862: font=微软雅黑, size=11.0, bold=None, italic=None, line_spacing=1.2, before=None, after=None
+71e7dc79-1ff7-45e8-997d-0ebda3762b91: font=微软雅黑, size=14.0, bold=True, italic=None, line_spacing=1.2, before=None, after=None
+b63ee27f-4cf3-414c-9275-d88e3f90795e: font=微软雅黑, size=13.0, bold=True, italic=None, line_spacing=1.2, before=None, after=None

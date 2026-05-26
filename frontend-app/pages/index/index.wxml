@@ -1,20 +1,53 @@
 <view class="container">
-  <view class="header-title">🔥 附近智能推荐</view>
+  <!-- 页面头部 -->
+  <view class="page-header">
+    <view class="header-title">⚡ 智能充电推荐</view>
+    <view class="header-subtitle">为您找到最合适的充电方案</view>
+  </view>
+
+  <!-- 推荐列表 -->
   <view class="station-list">
-    <view class="station-item" wx:for="{{stations}}" wx:key="id" bindtap="goToDetail" data-id="{{item.id}}">
-      <view class="info">
-        <view class="name">{{item.name}}</view>
-        <view class="address">{{item.address}}</view>
-        <view class="tags">
-          <text class="tag price">￥{{item.currentPrice != null ? item.currentPrice : '1.20'}}/度</text>
-          <text class="tag distance">距您 {{(item.distance != null ? item.distance : '--')}} km</text>
+    <view class="station-item" wx:for="{{stations}}" wx:key="id" bindtap="goToDetail" data-id="{{item.id}}" data-name="{{item.name}}">
+      <view class="station-card">
+        <!-- 排名徽章 -->
+        <view class="rank-badge">No.{{index + 1}}</view>
+        
+        <!-- 站点信息 -->
+        <view class="station-info">
+          <view class="name-row">
+            <view class="name">{{item.name}}</view>
+            <view class="score-badge">⭐ {{item.scoreText || '0.00'}}</view>
+          </view>
+          <view class="address">📍 {{item.address}}</view>
+          
+          <!-- 标签信息 -->
+          <view class="tags-row">
+            <text class="tag price">💰 ￥{{item.priceText || '1.20'}}/度</text>
+            <text class="tag distance">🚗 {{item.distanceText || '--'}}</text>
+          </view>
+
+          <view class="nav-row">
+            <view
+              class="nav-btn"
+              catchtap="goToNavigation"
+              data-latitude="{{item.latitude}}"
+              data-longitude="{{item.longitude}}"
+              data-name="{{item.name}}"
+              data-address="{{item.address}}"
+            >导航去这里</view>
+          </view>
         </view>
-      </view>
-      <view class="score-box">
-        <view class="score-val">{{item.recommendScore != null ? item.recommendScore : 0}}</view>
-        <view class="score-label">推荐指数</view>
+        
+        <!-- 右侧箭头 -->
+        <view class="arrow-icon">›</view>
       </view>
     </view>
-    <view wx:if="{{stations.length === 0}}" class="empty">暂无推荐电站</view>
+    
+    <!-- 空状态 -->
+    <view wx:if="{{stations.length === 0}}" class="empty">
+      <view class="empty-icon">🔍</view>
+      <view class="empty-text">暂无推荐电站</view>
+      <view class="empty-hint">下拉刷新试试</view>
+    </view>
   </view>
 </view>

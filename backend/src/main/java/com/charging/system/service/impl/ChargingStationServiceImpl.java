@@ -51,7 +51,7 @@ public class ChargingStationServiceImpl extends ServiceImpl<ChargingStationMappe
         
         for (ChargingStation station : allStations) {
             // 计算距离，Haversine半正矢公式
-            double distanceKm = calculateDistance(query.getLatitude().doubleValue(), query.getLongitude().doubleValue(),
+            double distanceKm = calculateDistance(query.getLatitude(), query.getLongitude(),
                     station.getLatitude().doubleValue(), station.getLongitude().doubleValue());
             
             // 剔除不在半径范围内的充电站

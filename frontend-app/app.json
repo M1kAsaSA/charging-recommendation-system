@@ -1,13 +1,35 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/charging/charging",
+    "pages/orders/orders",
+    "pages/profile/profile"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#0052d9",
     "navigationBarTitleText": "智能充电助手",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#0052d9",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

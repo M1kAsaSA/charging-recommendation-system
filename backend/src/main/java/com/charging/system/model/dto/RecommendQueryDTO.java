@@ -2,7 +2,6 @@ package com.charging.system.model.dto;
 
 import lombok.Data;
 import javax.validation.constraints.NotNull;
-import java.math.BigDecimal;
 
 /**
  * 获取充电站推荐的入参
@@ -11,10 +10,10 @@ import java.math.BigDecimal;
 public class RecommendQueryDTO {
     
     @NotNull(message = "经度不能为空")
-    private BigDecimal longitude;
+    private Double longitude;
     
     @NotNull(message = "纬度不能为空")
-    private BigDecimal latitude;
+    private Double latitude;
     
     // 搜索半径，默认5公里
     private Double radius = 5.0;

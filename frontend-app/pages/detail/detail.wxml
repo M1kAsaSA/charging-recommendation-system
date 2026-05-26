@@ -1,25 +1,63 @@
 <view class="container">
-  <view class="action-panel">
-    <button class="btn btn-scan" bindtap="scanToStart">
-      <text class="icon">📷</text> 模拟扫码充电
-    </button>
-    <button class="btn btn-stop" bindtap="stopAndSettle">
-      <text class="icon">⏹</text> 模拟拔枪结算
+  <!-- 站点信息头部 -->
+  <view class="station-header">
+    <view class="station-name">{{stationName}}</view>
+    <view class="station-address">📍 {{stationAddress || '暂无地址信息'}}</view>
+    <view class="pile-count">共 {{piles.length}} 个充电桩</view>
+  </view>
+
+  <!-- 站点地图 -->
+  <view wx:if="{{stationLatitude != null && stationLongitude != null}}" class="map-card">
+    <map
+      class="map-view"
+      latitude="{{stationLatitude}}"
+      longitude="{{stationLongitude}}"
+      markers="{{markers}}"
+      scale="16"
+      show-location
+    />
+  </view>
+
+  <view class="nav-panel">
+    <button class="btn btn-nav" bindtap="goToNavigation">
+      <text class="icon">🧭</text>
+      <view>导航去这里</view>
     </button>
   </view>
 
-  <view class="section-title">该电站下的充电桩</view>
+  <!-- 快速操作按钮 -->
+  <view class="action-panel">
+    <button class="btn btn-scan" bindtap="scanToStart">
+      <text class="icon">📷</text>
+      <view>扫码充电</view>
+    </button>
+  </view>
+
+  <!-- 充电桩列表 -->
+  <view class="section-title">实时电桩状态</view>
   
   <view class="pile-list">
     <view class="pile-item" wx:for="{{piles}}" wx:key="id">
-      <view class="pile-info">
-        <view class="code">桩编号: {{item.pileCode}}</view>
-        <view class="type">类型: {{item.type == 1 ? '快充' : '慢充'}} ({{item.power}}kW)</view>
-      </view>
-      <view class="status {{item.status == 1 ? 'idle' : (item.status == 2 ? 'busy' : 'fault')}}">
-        {{item.status == 1 ? '空闲中' : (item.status == 2 ? '充电中' : '故障')}}
+      <view class="pile-card">
+        <!-- 左侧信息 -->
+        <view class="pile-left">
+          <view class="pile-code-tag">{{item.pileCode}}</view>
+          <view class="pile-details">
+            <view class="pile-type">{{item.type == 1 ? '⚡快充' : '🔌慢充'}} · {{item.power}}kW</view>
+          </view>
+        </view>
+        <!-- 右侧状态 -->
+        <view class="pile-right">
+          <view class="status-badge {{item.status == 0 ? 'idle' : (item.status == 1 ? 'busy' : (item.status == 2 ? 'fault' : 'offline'))}}">
+            <text class="status-icon">{{item.status == 0 ? '✓' : (item.status == 1 ? '⚡' : (item.status == 2 ? '✕' : '○'))}}</text>
+            <text class="status-text">{{item.status == 0 ? '空闲' : (item.status == 1 ? '充电中' : (item.status == 2 ? '故障' : '离线'))}}</text>
+          </view>
+        </view>
       </view>
     </view>
-    <view wx:if="{{piles.length === 0}}" class="empty">该电站暂无充电桩</view>
+    <view wx:if="{{piles.length === 0}}" class="empty">
+      <view class="empty-icon">📭</view>
+      <view class="empty-text">该电站暂无充电桩</view>
+    </view>
   </view>
 </view>

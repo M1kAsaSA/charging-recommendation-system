@@ -1,0 +1,51 @@
+HENAN UNIVERSITY OF SCIENCE & TECHNOLOGY
+毕 业 设 计（论 文）
+题目     螺旋进气微米颗粒分离器设计
+姓   名         ×××
+学   院        软件学院
+专   业        软件工程
+指导教师       ×××
+2025年5月25日
+学位论文写作声明
+本人郑重声明：所呈交的学位论文，是本人在导师的指导下，独立进行研究工作所取得的成果。除文中已经注明引用的内容外，本论文不含任何其他个人或集体已经发表或撰写过的作品或成果。对本文的研究做出重要贡献的个人和集体，均已在文中以明确方式标明。本声明的法律结果由本人承担。
+论文作者签名：          日期：    年    月    日
+学位论文使用授权说明
+本人完全了解河南科技大学关于收集、保存、使用学位论文的规定，即：按照学校要求提交学位论文的印刷本和电子版本；学校有权保存学位论文的印刷本和电子版，并提供目录检索与阅览服务；学校可以采用影印、缩印、数字化或其它复制手段保存论文；在不以赢利为目的的前提下，学校可以将学位论文编入有关数据库,提供网上服务。（保密论文在解密后遵守此规定）
+论文作者签名：          导师签名：
+日期：      年    月    日
+螺旋进气微米颗粒分离器设计
+摘  要
+能源动力、工业生产、大气污染防治、化工制药等各个领域都涉及微米颗粒多相流动，但在微米颗粒气-粒两相流输送分离过程中，由于颗粒粒径小、两相流环境涉及高温、高速等问题，使得输送和分离机制不清，微颗粒分离和净化困难。
+关键词：涡旋管；微米颗粒；进气分离器；结构设计
+DESIGN OF SPIRAL INLET MICRON
+PARTICLE SEPARATOR
+ABSTRACT
+The multiphase flow of micron particles is involved in various fields, such as energy power, industrial production, air pollution prevention and control, chemical and pharmaceutical, and so on. In the process of gas-particle two-phase flow separation of micron particles, due to the small particle size, high temperature, and high speed involved in the two-phase flow environment, the transport and separation mechanism is unclear, and the separation and purification of micron particles are difficult.
+KEY WORDS: vortex tube; micron particles; intake separator; structural design
+第1章  绪  论
+§1.1 研究背景及意义
+随着环境保护的日益重视、微颗粒产生渠道的迅速增长，在能源动力、工业生产、大气污染防治等众多领域都会涉及到微米颗粒的分离与净化。在
+××××××××××××××××××××××××××××××××
+§1.2 国内外研究现状
+相较于传统的切向式旋风分离器，国外对于涡旋进气颗粒分离器的研究分析起步时间较晚，开始于世纪年代，大量的科研工作者分别通过不同
+××××××××××××××××××××××××××××××××
+§1.3 研究方法与内容
+早期涡旋管粒子分离器的研究是以实验研究为主，随着计算流体动力学和计算机的快速发展，数值模拟技术在流体机械性能仿真预测方面发挥着愈[1]
+××××××××××××××××××××××××××××××××××
+§2.3 湍流模型
+§2.3.1 标准模型
+标准模型属于两方程模型，其通过计算两个完全相互的湍来确定湍流的以及湍流长度的大小。尽管此湍流模型是一个××××××××××××××××××××××××××××××××××
+第6章 总结与展望
+§6.2 未来工作展望
+通过对螺旋进气分离器的数值模拟仿真研究发现，该装置对于10 μm以下的颗粒分离效率较低，由于计算成本，本文仅通过增添特型喷管来提高其性能，后续的研究工作可以从以下几方面展开：
+（1）旋流叶片的结构设计。通过数值仿真分析发现旋流叶片是造成压力损失的主要因素之一，后续的研究工作可以从改变旋流叶片螺距等参数，对比分析流场的变化及分离器性能[3]。
+（2）特型喷管的位置。在数值模拟的分析过程中发现特型喷管是造成压力损失的主要因素之一，其相对于旋流叶片的距离与旋流叶片后的低速区有直接关系，后续研究也可以以此角度展开进行深入探讨[4]。
+（3）螺旋分离器的串联组装。本文采用的多级分离器仅增添尾部的特型喷管，该方法是基于清除流流场仍具有螺旋运动趋势的假设。后续研究可以通过螺旋进气分离器整体串联组装，对比分析两种组合方式的优劣性进而验证此假设。
+（4）螺旋分离器的并联组装。由于计算成本，本文进行并联组装的相关工作，但工程实际应用时，单个螺旋进气分离器往往不能满足进气要求，需要对其进行结构组装及后续滤清结构设计。
+参考文献
+许峰.惯性分离器小尺度颗粒气固流动的实验研究和数值模拟[D].上海交通大学,2010.
+Bianchini G. V.Field Evaluation of an Air Cleaner for the T63 Engine Powered OH-6A Aircraft[C]. Proceeding of the Seventh Annual National Conference on Environmental Effects on Aircraft and Propulsion Systems,1967.
+李立国,王锁芳.直升机发动机的进气防护[M].北京:国防工业出版社,2009.
+Chenot J., Massoni E., Fourment J. Inverse problems in finite elementsimulation of metal forming processes[J]. Engineering Computations,2017, 13(2/3/4):190-225(36).
+致  谢
+岁月如流，冬去春来，疫情期间，随着本科学位论文的完成，四年的大学时光也接近尾声，即将进入新的人生阶段。如今回忆本科阶段的学习生活，××××××××××××××××××××××××××××××××××××
